@@ -1,7 +1,7 @@
 /**
  * @file quicksort.hpp
  * @author Luca Hanel (lhjnk@pm.me)
- * @brief Quicksort template
+ * @brief Templated In-Place Quicksort Algorithm
  * @version 0.1
  * @date 2022-03-21
  * 
