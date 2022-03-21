@@ -1,9 +1,9 @@
 #include <cstdlib>
 #include <iostream>
-#include "quicksort.hpp"
+#include "heapsort.hpp"
 
 /**
- * @brief Get value function for quicksort (for templated quicksort)
+ * @brief Get value function for heapsort (for templated heapsort)
  * 
  * @param obj object to get value from
  * @return double value
@@ -13,7 +13,7 @@ inline double getValue(double obj){
 }
 
 /**
- * @brief Compare function for quicksort (for templated quicksort)
+ * @brief Compare function for heapsort (for templated heapsort)
  * 
  * @param a First value
  * @param b Second value
@@ -51,7 +51,7 @@ int main(int argc, char **argv, char **envp){
     std::cout << list[i] << " ";
   }
   std::cout << std::endl;
-  qsrt::quicksort<double, double>(&list, 0, 9, getValue, compare);
+  hsrt::heapsort<double, double>(&list, 10, getValue, compare);
   std::cout << "--------------------" << std::endl;
   for(int i = 0; i < 10; i++){
     std::cout << list[i] << " ";
