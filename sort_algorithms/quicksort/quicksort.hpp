@@ -117,11 +117,6 @@ namespace qsrt
   template<class T, typename F>
   void quicksort(T **list, int left, int right, F (*getValue)(T)){
     int divisor;
-    std::cout << "--------------------" << std::endl;
-    for(int i = 0; i < 10; i++){
-      std::cout << (*list)[i] << " ";
-    }
-    std::cout << std::endl;
     if(left < right){
       divisor = sort<T, F>(list, left, right, getValue);
       qsrt::quicksort<T>(list, left, divisor-1, getValue);

@@ -19,7 +19,16 @@ int main(int argc, char **argv, char **envp){
   list[7] = 3.4;
   list[8] = 7.4;
   list[9] = 6.4;
+  for(int i = 0; i < 10; i++){
+    std::cout << list[i] << " ";
+  }
+  std::cout << std::endl;
   qsrt::quicksort<double, double>(&list, 0, 9, getValue);
+  std::cout << "--------------------" << std::endl;
+  for(int i = 0; i < 10; i++){
+    std::cout << list[i] << " ";
+  }
+  std::cout << std::endl;
   free(list);
   return 0;
 }
